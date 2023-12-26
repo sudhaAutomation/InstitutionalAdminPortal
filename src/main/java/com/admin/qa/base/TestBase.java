@@ -42,13 +42,13 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		if (browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "bin/chromedriver.exe");
-			//driver = new ChromeDriver();
+			// driver = new ChromeDriver();
 			ChromeOptions options = new ChromeOptions();
-			//options.setBinary("C:\\Users\\SWHIZZ TECHNOLOGIES\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
-			options.setBinary(System.getProperty("chromePath"));
-			System.out.println("===============================>"+System.getProperty("chromePath"));
+			// options.setBinary("C:\\Users\\SWHIZZ
+			// TECHNOLOGIES\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
+			options.setBinary(prop.getProperty("browserBinary"));
 			driver = new ChromeDriver(options);
-					
+
 		} else if (browserName.equals("FF")) {
 			System.setProperty("webdriver.gecko.driver", "bin/geckodriver.exe");
 			driver = new FirefoxDriver();
