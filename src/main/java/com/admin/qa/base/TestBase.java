@@ -44,7 +44,9 @@ public class TestBase {
 			System.setProperty("webdriver.chrome.driver", "bin/chromedriver.exe");
 			//driver = new ChromeDriver();
 			ChromeOptions options = new ChromeOptions();
-			options.setBinary("C:\\Users\\SWHIZZ TECHNOLOGIES\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
+			//options.setBinary("C:\\Users\\SWHIZZ TECHNOLOGIES\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
+			options.setBinary(System.getProperty("chromePath"));
+			System.out.println("===============================>"+System.getProperty("chromePath"));
 			driver = new ChromeDriver(options);
 					
 		} else if (browserName.equals("FF")) {
