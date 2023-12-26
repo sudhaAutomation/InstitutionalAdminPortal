@@ -46,7 +46,8 @@ public class TestBase {
 			ChromeOptions options = new ChromeOptions();
 			// options.setBinary("C:\\Users\\SWHIZZ
 			// TECHNOLOGIES\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
-			options.setBinary(prop.getProperty("browserBinary"));
+			//options.setBinary(prop.getProperty("browserBinary"));
+			options.setBinary(System.getProperty("browserBinary"));
 			driver = new ChromeDriver(options);
 
 		} else if (browserName.equals("FF")) {
