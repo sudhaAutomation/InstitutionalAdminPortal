@@ -1,0 +1,13 @@
+com\admin\qa\domain\CourseDetails.class
+com\admin\qa\pages\ChangePasswordPage.class
+com\admin\qa\pages\DashboardPage.class
+com\admin\qa\util\WebEventListener.class
+com\admin\qa\pages\AddCategoryPage.class
+com\admin\qa\pages\CategoryListPage.class
+com\admin\qa\pages\CoursesListPage.class
+com\admin\qa\pages\UpComingBatchesPage.class
+com\qa\reportlistener\ExtentReporterNG.class
+com\admin\qa\base\TestBase.class
+com\admin\qa\util\TestUtil.class
+com\admin\qa\pages\LoginPage.class
+com\admin\qa\pages\AddCoursePage.class

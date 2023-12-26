@@ -1,0 +1,4 @@
+com\admin\qa\testcases\ChangePasswordPageTest.class
+com\admin\qa\testcases\CategoryListTest.class
+com\admin\qa\testcases\CoursesListTest.class
+com\admin\qa\testcases\LoginPageTest.class

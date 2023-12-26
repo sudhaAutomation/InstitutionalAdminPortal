@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="9" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Admin Portal" duration-ms="27925" started-at="2023-12-21T12:26:23Z" finished-at="2023-12-21T12:26:51Z">
+    <groups>
+    </groups>
+    <test name="Smoke Testing" duration-ms="27925" started-at="2023-12-21T12:26:23Z" finished-at="2023-12-21T12:26:51Z">
+      <class name="com.admin.qa.testcases.CoursesListTest">
+        <test-method status="PASS" signature="coursesListMenu()[pri:0, instance:com.admin.qa.testcases.CoursesListTest@36d64342]" name="coursesListMenu" is-config="true" duration-ms="3521" started-at="2023-12-21T17:56:31Z" finished-at="2023-12-21T17:56:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- coursesListMenu -->
+        <test-method status="PASS" signature="addCourse()[pri:0, instance:com.admin.qa.testcases.CoursesListTest@36d64342]" name="addCourse" duration-ms="2184" started-at="2023-12-21T17:56:34Z" finished-at="2023-12-21T17:56:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCourse -->
+        <test-method status="PASS" signature="verifyCoursesListPageTitle()[pri:0, instance:com.admin.qa.testcases.CoursesListTest@36d64342]" name="verifyCoursesListPageTitle" duration-ms="33" started-at="2023-12-21T17:56:36Z" finished-at="2023-12-21T17:56:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCoursesListPageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.admin.qa.testcases.CoursesListTest@36d64342]" name="tearDown" is-config="true" duration-ms="140" started-at="2023-12-21T17:56:36Z" finished-at="2023-12-21T17:56:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.admin.qa.testcases.CoursesListTest -->
+      <class name="com.admin.qa.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.admin.qa.testcases.LoginPageTest@7f63425a]" name="setUp" is-config="true" duration-ms="2809" started-at="2023-12-21T17:56:23Z" finished-at="2023-12-21T17:56:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.admin.qa.testcases.LoginPageTest@7f63425a]" name="loginPageTitleTest" duration-ms="10" started-at="2023-12-21T17:56:26Z" finished-at="2023-12-21T17:56:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.admin.qa.testcases.LoginPageTest@7f63425a]" name="tearDown" is-config="true" duration-ms="759" started-at="2023-12-21T17:56:26Z" finished-at="2023-12-21T17:56:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.admin.qa.testcases.LoginPageTest@7f63425a]" name="setUp" is-config="true" duration-ms="1989" started-at="2023-12-21T17:56:27Z" finished-at="2023-12-21T17:56:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTest()[pri:2, instance:com.admin.qa.testcases.LoginPageTest@7f63425a]" name="loginTest" duration-ms="1171" started-at="2023-12-21T17:56:29Z" finished-at="2023-12-21T17:56:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.admin.qa.testcases.LoginPageTest@7f63425a]" name="tearDown" is-config="true" duration-ms="741" started-at="2023-12-21T17:56:30Z" finished-at="2023-12-21T17:56:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.admin.qa.testcases.LoginPageTest -->
+      <class name="com.admin.qa.testcases.ChangePasswordPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.admin.qa.testcases.ChangePasswordPageTest@39ba5a14]" name="setUp" is-config="true" duration-ms="7990" started-at="2023-12-21T17:56:36Z" finished-at="2023-12-21T17:56:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="changePassword()[pri:0, instance:com.admin.qa.testcases.ChangePasswordPageTest@39ba5a14]" name="changePassword" duration-ms="427" started-at="2023-12-21T17:56:44Z" finished-at="2023-12-21T17:56:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changePassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.admin.qa.testcases.ChangePasswordPageTest@39ba5a14]" name="tearDown" is-config="true" duration-ms="1168" started-at="2023-12-21T17:56:45Z" finished-at="2023-12-21T17:56:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.admin.qa.testcases.ChangePasswordPageTest -->
+      <class name="com.admin.qa.testcases.CategoryListTest">
+        <test-method status="PASS" signature="categoryList()[pri:0, instance:com.admin.qa.testcases.CategoryListTest@511baa65]" name="categoryList" is-config="true" duration-ms="3234" started-at="2023-12-21T17:56:46Z" finished-at="2023-12-21T17:56:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- categoryList -->
+        <test-method status="PASS" signature="verifycategoryListDisplayed()[pri:1, instance:com.admin.qa.testcases.CategoryListTest@511baa65]" name="verifycategoryListDisplayed" duration-ms="52" started-at="2023-12-21T17:56:49Z" finished-at="2023-12-21T17:56:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifycategoryListDisplayed -->
+        <test-method status="PASS" signature="verifyCategoryListTable()[pri:2, instance:com.admin.qa.testcases.CategoryListTest@511baa65]" name="verifyCategoryListTable" duration-ms="58" started-at="2023-12-21T17:56:49Z" finished-at="2023-12-21T17:56:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoryListTable -->
+        <test-method status="PASS" signature="verifyAddCatgoryBtn()[pri:3, instance:com.admin.qa.testcases.CategoryListTest@511baa65]" name="verifyAddCatgoryBtn" duration-ms="750" started-at="2023-12-21T17:56:49Z" finished-at="2023-12-21T17:56:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddCatgoryBtn -->
+        <test-method status="PASS" signature="verifyAddCategory()[pri:4, instance:com.admin.qa.testcases.CategoryListTest@511baa65]" name="verifyAddCategory" duration-ms="701" started-at="2023-12-21T17:56:50Z" finished-at="2023-12-21T17:56:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddCategory -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.admin.qa.testcases.CategoryListTest@511baa65]" name="tearDown" is-config="true" duration-ms="176" started-at="2023-12-21T17:56:51Z" finished-at="2023-12-21T17:56:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.admin.qa.testcases.CategoryListTest -->
+    </test> <!-- Smoke Testing -->
+  </suite> <!-- Admin Portal -->
+</testng-results>
