@@ -10,6 +10,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.annotations.Listeners;
@@ -41,7 +42,11 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		if (browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "bin/chromedriver.exe");
-			driver = new ChromeDriver();
+			//driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.setBinary("C:\\Users\\SWHIZZ TECHNOLOGIES\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
+			driver = new ChromeDriver(options);
+					
 		} else if (browserName.equals("FF")) {
 			System.setProperty("webdriver.gecko.driver", "bin/geckodriver.exe");
 			driver = new FirefoxDriver();
