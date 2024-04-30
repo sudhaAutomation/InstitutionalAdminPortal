@@ -1,8 +1,11 @@
 package com.admin.qa.pages;
 
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.admin.qa.base.TestBase;
 
@@ -30,6 +33,9 @@ public class ChangePasswordPage extends TestBase {
 		oldPassword.sendKeys(oldpw);
 		newPassword.sendKeys(newpw);
 		repeatPassword.sendKeys(newpw);
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.ignoring(ElementClickInterceptedException.class)
+				.until(ExpectedConditions.elementToBeClickable(passwordBtn));
 		passwordBtn.click();
 	}
 

@@ -52,7 +52,7 @@ public class AddCoursePage extends TestBase {
 		courseNameField.sendKeys(courseDetails.getName());
 		courseURLField.sendKeys(courseDetails.getUrl());
 		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@id='TypeHere11_ifr']")));
-		courseContentField.sendKeys(courseDetails.getContent());
+	//	courseContentField.sendKeys(courseDetails.getContent());
 		driver.switchTo().parentFrame();
 		new Select(popularTypeField).selectByVisibleText(courseDetails.getIsPopular());
 		submitBtn.click();

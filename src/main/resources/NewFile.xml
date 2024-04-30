@@ -4,15 +4,33 @@
 	<listeners>
 		<listener class-name="com.qa.reportlistener.ExtentReporterNG" />
 	</listeners>
-	
-	<test name="Sanity Testing">
+
+	<test name="Sanity Testing" parallel="tests" thread-count=2>
 		<classes>
 			<class name="com.admin.qa.testcases.LoginPageTest"></class>
+
+		</classes>
+	</test>
+	<test name="Sanity Testing" parallel="tests" thread-count=2>
+		<classes>
+
 			<class name="com.admin.qa.testcases.CoursesListTest"></class>
+
+		</classes>
+	</test>
+	<test name="Sanity Testing" parallel="tests" thread-count=2>
+		<classes>
+
 			<class name="com.admin.qa.testcases.CategoryListTest"></class>
+
+		</classes>
+	</test>
+	<test name="Sanity Testing" parallel="tests" thread-count=2>
+		<classes>
+
+
 			<class name="com.admin.qa.testcases.ChangePasswordPageTest"></class>
 		</classes>
 	</test>
-
 </suite>
 

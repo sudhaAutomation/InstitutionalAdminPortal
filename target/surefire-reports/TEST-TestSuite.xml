@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="9" failures="0" name="TestSuite" time="5.226" errors="0" skipped="0">
+<testsuite tests="11" failures="2" name="TestSuite" time="38.767" errors="0" skipped="2">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_311\jre\bin"/>
@@ -27,9 +27,9 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\SWHIZZ TECHNOLOGIES\eclipse-workspace1\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5572709290856518873.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\SWHIZZ TECHNOLOGIES\eclipse-workspace1\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7960382921506851984.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_311\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_311/bin/server;C:/Program Files/Java/jre1.8.0_311/bin;C:/Program Files/Java/jre1.8.0_311/lib/amd64;&quot;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\SWHIZZ TECHNOLOGIES\Downloads\jars\test project\apache-maven-3.8.6\bin;&quot;;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_311\bin;C:\apache-maven-3.8.6\bin;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\apache-maven-3.8.6\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Ruby31-x64\bin;C:\Users\SWHIZZ TECHNOLOGIES\AppData\Local\Microsoft\WindowsApps;;C:\Users\SWHIZZ TECHNOLOGIES\Downloads\Testing\eclipse;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_311\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_311/bin/server;C:/Program Files/Java/jre1.8.0_311/bin;C:/Program Files/Java/jre1.8.0_311/lib/amd64;&quot;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\SWHIZZ TECHNOLOGIES\Downloads\jars\test project\apache-maven-3.8.6\bin;&quot;;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_311\bin;C:\apache-maven-3.8.6\bin;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\apache-maven-3.8.6\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Ruby31-x64\bin;C:\Users\SWHIZZ TECHNOLOGIES\AppData\Local\Microsoft\WindowsApps;;C:\Users\SWHIZZ TECHNOLOGIES\Downloads\Testing\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -61,13 +61,128 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.admin.qa.testcases.CategoryListTest" name="verifycategoryListDisplayed" time="0.064"/>
-  <testcase classname="com.admin.qa.testcases.CategoryListTest" name="verifyCategoryListTable" time="0.07"/>
-  <testcase classname="com.admin.qa.testcases.CategoryListTest" name="verifyAddCatgoryBtn" time="0.734"/>
-  <testcase classname="com.admin.qa.testcases.CategoryListTest" name="verifyAddCategory" time="0.737"/>
-  <testcase classname="com.admin.qa.testcases.ChangePasswordPageTest" name="changePassword" time="0.39"/>
-  <testcase classname="com.admin.qa.testcases.CoursesListTest" name="addCourse" time="1.976"/>
-  <testcase classname="com.admin.qa.testcases.CoursesListTest" name="verifyCoursesListPageTitle" time="0.039"/>
-  <testcase classname="com.admin.qa.testcases.LoginPageTest" name="loginPageTitleTest" time="0.025"/>
-  <testcase classname="com.admin.qa.testcases.LoginPageTest" name="loginTest" time="1.191"/>
+  <testcase classname="com.admin.qa.testcases.CategoryListTest" name="verifycategoryListDisplayed" time="0.133"/>
+  <testcase classname="com.admin.qa.testcases.CategoryListTest" name="verifyCategoryListTable" time="0.141"/>
+  <testcase classname="com.admin.qa.testcases.CategoryListTest" name="verifyAddCatgoryBtn" time="2.043"/>
+  <testcase classname="com.admin.qa.testcases.CategoryListTest" name="verifyAddCategory" time="1.283"/>
+  <testcase classname="com.admin.qa.testcases.ChangePasswordPageTest" name="setUp" time="11.831">
+    <failure message="element click intercepted: Element is not clickable at point (70, 571)
+  (Session info: chrome=123.0.6312.124)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-18R30RO2&apos;, ip: &apos;192.168.1.55&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.124, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\SWHIZZ~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52671}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e98c758984dd8a1b66d80a5d584d1b5e" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (70, 571)
+  (Session info: chrome=123.0.6312.124)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-18R30RO2&apos;, ip: &apos;192.168.1.55&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.124, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\SWHIZZ~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52671}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e98c758984dd8a1b66d80a5d584d1b5e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.admin.qa.pages.DashboardPage.clickOnChangePasswordMenu(DashboardPage.java:96)
+	at com.admin.qa.testcases.ChangePasswordPageTest.setUp(ChangePasswordPageTest.java:20)
+</failure>
+    <system-out>Before navigating to: &apos;https://swhizz.com/site_staging/admin&apos;
+Navigated to:&apos;https://swhizz.com/site_staging/admin&apos;
+Trying to find Element By : By.name: email
+Found Element By : By.name: email
+Trying to find Element By : By.name: password
+Found Element By : By.name: password
+Trying to find Element By : By.name: submit
+Found Element By : By.name: submit
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (e98c758984dd8a1b66d80a5d584d1b5e)] -&gt; name: submit]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (e98c758984dd8a1b66d80a5d584d1b5e)] -&gt; name: submit]
+Trying to find Element By : By.xpath: //span[contains(text(),&apos;Change Password&apos;)]
+Found Element By : By.xpath: //span[contains(text(),&apos;Change Password&apos;)]
+ChangePassword is displayed::true
+Trying to find Element By : By.xpath: //span[contains(text(),&apos;Change Password&apos;)]
+Found Element By : By.xpath: //span[contains(text(),&apos;Change Password&apos;)]
+Trying to find Element By : By.xpath: //span[contains(text(),&apos;Change Password&apos;)]
+Found Element By : By.xpath: //span[contains(text(),&apos;Change Password&apos;)]
+Trying to find Element By : By.xpath: //span[contains(text(),&apos;Change Password&apos;)]
+Found Element By : By.xpath: //span[contains(text(),&apos;Change Password&apos;)]
+Trying to find Element By : By.xpath: //span[contains(text(),&apos;Change Password&apos;)]
+Found Element By : By.xpath: //span[contains(text(),&apos;Change Password&apos;)]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (e98c758984dd8a1b66d80a5d584d1b5e)] -&gt; xpath: //span[contains(text(),&apos;Change Password&apos;)]]
+Exception occured: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (70, 571)
+  (Session info: chrome=123.0.6312.124)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-18R30RO2&apos;, ip: &apos;192.168.1.55&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.124, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\SWHIZZ~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52671}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e98c758984dd8a1b66d80a5d584d1b5e
+</system-out>
+    <system-err>Starting ChromeDriver 122.0.6261.94 (880dbf29479c6152d5e4f08dfd3a96b30f919e56-refs/branch-heads/6261@{#960}) on port 13966
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1713607337.452][WARNING]: This version of ChromeDriver has not been tested with Chrome version 123.
+Apr 20, 2024 3:32:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</system-err>
+  </testcase>
+  <testcase classname="com.admin.qa.testcases.ChangePasswordPageTest" name="changePassword" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.admin.qa.testcases.ChangePasswordPageTest" name="tearDown" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.admin.qa.testcases.CoursesListTest" name="verifyCoursesListPageTitle" time="0.064"/>
+  <testcase classname="com.admin.qa.testcases.CoursesListTest" name="addCourse" time="21.455">
+    <failure message="Cannot locate element with text: DevOps
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-18R30RO2&apos;, ip: &apos;192.168.1.55&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Cannot locate element with text: DevOps
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-18R30RO2&apos;, ip: &apos;192.168.1.55&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at com.admin.qa.pages.AddCoursePage.addCourse(AddCoursePage.java:51)
+	at com.admin.qa.testcases.CoursesListTest.addCourse(CoursesListTest.java:42)
+</failure>
+    <system-out>Trying to find Element By : By.xpath: //header/div[1]/div[1]/div[1]/a[1]
+Found Element By : By.xpath: //header/div[1]/div[1]/div[1]/a[1]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (d3b740b1dc0f5339aad65b5b2a4a8201)] -&gt; xpath: //header/div[1]/div[1]/div[1]/a[1]]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (d3b740b1dc0f5339aad65b5b2a4a8201)] -&gt; xpath: //header/div[1]/div[1]/div[1]/a[1]]
+Trying to find Element By : By.name: course_image
+Found Element By : By.name: course_image
+Trying to find Element By : By.name: category_id
+Found Element By : By.name: category_id
+Trying to find Element By : By.name: category_id
+Found Element By : By.name: category_id
+Trying to find Element By : By.name: category_id
+Found Element By : By.name: category_id
+Trying to find Element By : By.xpath: .//option[normalize-space(.) = &quot;DevOps&quot;]
+Found Element By : By.xpath: .//option[normalize-space(.) = &quot;DevOps&quot;]
+</system-out>
+  </testcase>
+  <testcase classname="com.admin.qa.testcases.LoginPageTest" name="loginPageTitleTest" time="0.014"/>
+  <testcase classname="com.admin.qa.testcases.LoginPageTest" name="loginTest" time="1.803"/>
 </testsuite>

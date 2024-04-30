@@ -22,28 +22,36 @@ public class CoursesListTest extends TestBase {
 		coursesListPage = dashboardpage.clickOnCoursesMenu();
 	}
 
-	@Test
+	@Test(priority = 1)
 	public void verifyCoursesListPageTitle() {
 		boolean isPageLoaded = coursesListPage.verifyCoursesListTilte();
 		Assert.assertTrue(isPageLoaded, "Course List Page Not Loaded");
 	}
 
-	@Test
+	@Test(priority = 2)
 	public void addCourse() {
 		AddCoursePage addCoursePage = coursesListPage.clickOnAddCourseBtn();
 		CourseDetails courseDetails = new CourseDetails();
-		courseDetails.setPhoto("C:\\Users\\SWHIZZ TECHNOLOGIES\\eclipse-workspace1\\InstitutionalAdminPortal\\src\\main\\resources\\images\\Java.png");
-		courseDetails.setCategory("DevOps");
+		courseDetails.setPhoto(
+				"C:\\Users\\SWHIZZ TECHNOLOGIES\\eclipse-workspace1\\InstitutionalAdminPortal\\src\\main\\resources\\images\\Java.png");
+		courseDetails.setCategory("Java Fullstack");
 		courseDetails.setName("Java");
 		courseDetails.setUrl("https://www.java.com/");
-		courseDetails.setContent(
-				"Java is a widely-used programming language for coding web applications. It has been a popular choice among developers for over two decades, with millions of Java applications in use today. Java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself. It is a fast, secure, reliable programming language for coding everything from mobile apps and enterprise software to big data applications and server-side technologies.");
+		// courseDetails.setContent(
+		// "Java is a widely-used programming language for coding web applications. It
+		// has been a popular choice among developers for over two decades, with
+		// millions of Java applications in use today. Java is a multi-platform,
+		// object-oriented, and network-centric language that can be used as a platform
+		// in itself. It is a fast, secure, reliable programming language for coding
+		// everything from mobile apps and enterprise software to big data applications
+		// and server-side technologies.");
 		courseDetails.setIsPopular("Yes");
 		addCoursePage.addCourse(courseDetails);
 	}
+
 	@AfterClass
 	public void tearDown() {
-	driver.close();	
+		driver.close();
 	}
 
 }

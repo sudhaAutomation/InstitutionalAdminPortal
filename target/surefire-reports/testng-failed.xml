@@ -3,14 +3,20 @@
 <suite verbose="0" name="Failed suite [Command line suite]">
   <test thread-count="5" verbose="0" name="Command line test(failed)">
     <classes>
-      <class name="com.admin.qa.testcases.CategoryListTest">
+      <class name="com.admin.qa.testcases.CoursesListTest">
         <methods>
+          <include name="addCourse"/>
+          <include name="coursesListMenu"/>
           <include name="tearDown"/>
-          <include name="categoryList"/>
-          <include name="verifyAddCategory"/>
-          <include name="verifyAddCatgoryBtn"/>
         </methods>
-      </class> <!-- com.admin.qa.testcases.CategoryListTest -->
+      </class> <!-- com.admin.qa.testcases.CoursesListTest -->
+      <class name="com.admin.qa.testcases.ChangePasswordPageTest">
+        <methods>
+          <include name="changePassword"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.admin.qa.testcases.ChangePasswordPageTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->

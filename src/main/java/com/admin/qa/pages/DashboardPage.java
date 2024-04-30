@@ -19,9 +19,11 @@ import com.admin.qa.base.TestBase;
 public class DashboardPage extends TestBase {
 
 	@FindBy(xpath = "//div[contains(text(),'admin')]")
-	//@CacheLookup
+	// @CacheLookup
 	WebElement admin;
-
+	@FindBy(xpath = "//body/div[1]/section[1]/div[1]/div[1]/aside[1]/div[1]/a[1]")
+	WebElement closeBtn;
+	
 	@FindBy(xpath = "//span[contains(text(),'Categories List')]")
 	WebElement categoriesList;
 
@@ -89,11 +91,15 @@ public class DashboardPage extends TestBase {
 	public ChangePasswordPage clickOnChangePasswordMenu() throws InterruptedException {
 		Thread.sleep(5000l);
 		System.out.println("ChangePassword is displayed::" + changePassword.isDisplayed());
-		//driver.findElement(By.className("left-nav md"));
-		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("arguments[0].scrollIntoView()",changePassword);
-		
+		// driver.findElement(By.className("left-nav md"));
+		System.out.println("ChangePassword is Enabled::" + changePassword.isEnabled());
+		closeBtn.click();
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView()", changePassword);
+		WebDriverWait wait = new WebDriverWait(driver, 25);
+		wait.until(ExpectedConditions.elementToBeClickable(changePassword));
 		changePassword.click();
+
 		return new ChangePasswordPage();
 	}
 
